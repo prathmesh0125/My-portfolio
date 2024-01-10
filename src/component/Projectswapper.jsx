@@ -78,10 +78,7 @@ export default function App() {
         pagination={{
           // clickable: false,
         }}
-        autoplay={{
-          delay: 1000, // Set the delay between slides (in milliseconds)
-          disableOnInteraction: false, // Autoplay will not be disabled after user interactions (like click on the slider)
-        }}
+        
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -102,9 +99,9 @@ export default function App() {
               <p className='title'>{name}</p>
               <p className='desc' >{description}</p>
               <p className='desc'>{techstack}</p>
-              <div className='project_link'>
+              <div className='swapper_project_link'>
               
-              <Link to="" style={{color:"white"}}>{github}</Link>
+              <Link to="" style={{color:"white",fontSize:"34px" }}>{github}</Link>
                   
               <Link to="" style={{color:"white"}}>Demo</Link>
               </div>

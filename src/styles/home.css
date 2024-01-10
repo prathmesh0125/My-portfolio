@@ -330,45 +330,75 @@ h1 .Typewriter {
     color: black;
   }
 }
-@media (min-width: 420px) and (max-width: 920px) {
+@media (min-width: 650px) and (max-width: 920px) {
+  h1 .Typewriter {
+    top: 100%;
+    left: 0;
+    line-height: 1.33;
+    font-weight: 600;
+    font-size: 4rem;
+}
   .hero {
-    top: 10%;
+    top: 25%;
     height: 100%;
     flex-direction: column;
   }
-  .heroleft .elem {
-    position: relative;
-    height: 40vw;
-    /* background-color: red; */
-    overflow: hidden;
+.heroright{
+  display:none ;
+}
+.heroleft .elem {
+  position: relative;
+  height: 83vw;
 }
 .heroleft .elem h1 {
   
+  font-size: 4rem;
+}
+}
+@media (min-width: 420px) and (max-width: 650px) {
+  .hero {
+    top: 11%;
+    gap: 2rem;
+    height: 97%;
+    flex-direction: column
+  }
+  .heroleft .elem {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 76vw;
+      align-items: center;
+      /* background-color: red; */
+      overflow: hidden;
+}
+.heroleft .elem h1 {
+  text-align: center;
   font-size: 2rem;
 }
 .heroright p {
  display: none;
 }
 .heroright{
-  width: 82%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 .sociallink {
   display: flex;
   line-height: 14px;
   align-items: center;
-  width: 425px;
-  font-size: 3vw;
+  width: 338px;
+  font-size: 5vw;
+}
+h1 .Typewriter{
+  font-size: 2rem !important;
 }
 }
 
 
 
-@media (min-width: 420px) and (max-width: 1300px) {
-
-
-  
-
-
+@media (min-width: 900px) and (max-width: 1300px) {
 
 
   .heroleft .elem {
@@ -396,10 +426,14 @@ h1 .Typewriter {
     /* line-height: 77px; */
     align-items: center;
     width: 425px;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .sociallink h1 {
     font-size: 15px;
     font-weight: 300;
+  }
+  .sociallink h3{
+    font-weight: 100;
+    font-size: 2rem;
   }
 }

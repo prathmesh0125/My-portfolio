@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/nav.css';
-import { BsMenuApp } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {

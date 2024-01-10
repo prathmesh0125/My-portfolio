@@ -26,9 +26,13 @@
   align-items: center;
   gap: 0.4rem;
 }
+.textimonial-deatils a{
+  text-decoration: none;
+}
 .textimonial-deatils h3 {
   font-size: 1rem;
   color: var(--primary-color);
+  text-decoration: none;
 }
 .textimonial-deatils p {
   font-size: 0.875rem;
@@ -37,6 +41,8 @@
 .testmonial-content {
   display: flex;
   flex-direction: column;
+  background-color: var(--light-gray);
+
   gap: 2rem;
 }
 .Test-Title {

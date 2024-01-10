@@ -10,6 +10,8 @@ const Testimonial = () => {
       personname: "Mohit Khandelwal",
       post: "Lead consultant at Genpact",
       img:"tech/profile.png",
+      href:"https://www.linkedin.com/in/mohitkh7/"
+
     },
     {
       id: 2,
@@ -17,6 +19,7 @@ const Testimonial = () => {
       personname: "Sumit moni",
       post: "Full stack developer",
       img:"tech/profile.png",
+      href:"https://www.linkedin.com/in/sumitsoni0226/"
     },
     {
       id: 1,
@@ -24,6 +27,9 @@ const Testimonial = () => {
       personname: "Abhishek Saware",
       post: "SDE @EnergyExemplar",
       img:"tech/profile.png",
+      href:"https://www.linkedin.com/in/abhishek-saware-515112193/"
+
+
     },
     
   ];
@@ -32,7 +38,7 @@ const Testimonial = () => {
       <div class="testmonial-content">
         <h2 class="Test-Title">What Others Say About Me</h2>
         <div class="testimonial-grid">
-            {Testimonials.map(({id,Text,personname,post,img})=> (
+            {Testimonials.map (({id,Text,personname,post,img,href})=> (
           <div class="testimonial-card" key={id}>
               <div class="testimnial-text">
               {Text}
@@ -41,7 +47,7 @@ const Testimonial = () => {
                 <img src={img} alt="" />
               </div>
               <div class="textimonial-deatils">
-                <h3>{personname}</h3>
+                <a href={href}><h3>{personname}</h3></a>
                 <p>{post}</p>
               </div>
             </div>

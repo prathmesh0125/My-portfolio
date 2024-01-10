@@ -1,95 +1,96 @@
 .about {
-    /* background-color: hsl(219, 48%, 8%); */
-    min-height: 100vh;
-    display: flex;
+  /* background-color: hsl(219, 48%, 8%); */
+  min-height: 100vh;
+  display: flex;
+}
+.aboutcontainer1 {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: hsl(219, 48%, 8%);
+
+  width: 60%;
+  top: 18%;
+  height: 56vh;
+  position: absolute;
+  right: 52px;
+  border-radius: 94px 0 0 0;
+  padding: 6vmax;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: right;
+}
+.aboutcontainer1 > p {
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  letter-spacing: 2px;
+  word-spacing: -1px;
+  line-height: 40px;
+  color: rgba(244, 230, 230, 0.822);
+  font-size: 1.5vmax;
+  width: 33%;
+}
+.aboutcontainer2 {
+  width: 60%;
+  min-height: 60vh;
+  background-color: rgb(79 71 99);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+  position: absolute;
+  border-radius: 0 0 104px;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  transform: translateX(200vw) translateY(554%) rotateZ(-360deg);
+  animation: aboutAnimation 2s ease-in forwards;
+}
+
+@keyframes aboutAnimation {
+  to {
+    transform: translateX(20%) translateY(-10%);
+  }
+}
+.aboutcontainer2 > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1vmax;
+  color: white;
+  box-sizing: border-box;
+}
+.aboutcontainer2 > div:first-child {
+  align-items: center;
+}
+.aboutcontainer2 img {
+  border-radius: 50%;
+}
+.aboutcontainer2 > div > h3 {
+  word-spacing: 4px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  font-size: 30px;
+  text-align: right;
+  color: white;
+}
+@keyframes aboutAnimationphone {
+  to {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    align-items: flex-end;
   }
   .aboutcontainer1 {
-    /* background-color: rgb(255, 255, 255); */
-    background-color: hsl(219, 48%, 8%);
-
-    width: 60%;
-    top: 18%;
-    height: 56vh;
-    position: absolute;
-    right: 52px;
-    border-radius: 94px 0 0 0;
-    padding: 6vmax;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: right;
-  }
-  .aboutcontainer1 > p {
-    font-family: "Courier New", Courier, monospace;
-    text-align: right;
-    letter-spacing: 2px;
-    word-spacing: -1px;
-    line-height: 40px;
-    color: rgba(244, 230, 230, 0.822);
-    font-size: 1.5vmax;
-    width: 33%;
+    display: none;
   }
   .aboutcontainer2 {
-    width: 60%;
-    min-height: 60vh;
-    background-color: rgb(22, 3, 67);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
-    position: absolute;
-    border-radius: 0 0 104px;
-    bottom: 0;
-    box-sizing: border-box;
-    padding: 2vmax;
-    display: flex;
-    transform: translateX(200vw) translateY(554%) rotateZ(-360deg);
-    animation: aboutAnimation 2s ease-in forwards;
-  }
-  
-  @keyframes aboutAnimation {
-    to {
-      transform: translateX(20%) translateY(-10%);
-    }
-  }
-  .aboutcontainer2 > div {
-    width: 100%;
-    display: flex;
+    width: 86%;
+    position: relative;
     flex-direction: column;
-    padding: 1vmax;
-    color: rgba(237, 235, 235, 0.712);
-    box-sizing: border-box;
+    animation: aboutAnimationphone 2s ease-in forwards;
+    top: -8rem;
+    margin: 0 auto;
   }
-  .aboutcontainer2 > div:first-child {
-    align-items: center;
+  .aboutcontainer2 > div > h3 {
+    text-align: center !important;
   }
-  .aboutcontainer2 img{
-    border-radius: 50%;
-  }
-  .aboutcontainer2 >div> h3 {
-    word-spacing: 4px;
-    line-height: 40px;
-    letter-spacing: 4px;
-    font-size: 30px;
-    text-align: right;
-    color: white;
-  }
-  @keyframes aboutAnimationphone {
-    to {
-      transform: translateX(0%) translateY(0%);
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .about {
-      align-items: flex-end;
-    }
-    .aboutcontainer1 {
-      display: none;
-    }
-    .aboutcontainer2 {
-      width: 100%;
-      position: relative;
-      flex-direction: column;
-      animation: aboutAnimationphone 2s ease-in forwards;
-    }
-    .aboutcontainer2 > div > h3 {
-      text-align: center !important;
-    }
-  }
-  
+}

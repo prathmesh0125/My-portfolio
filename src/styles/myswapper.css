@@ -100,7 +100,7 @@
   /* margin-top: 14px; */
 }
 
-.project_link {
+.Swipper_Project_card.swapper_project_link {
   flex-direction: row;
   display: flex;
   justify-content: center;
@@ -108,22 +108,25 @@
   gap: 10rem;
   line-height: 79px;
 }
-.project_link :nth-child(1) {
+.Swipper_Project_card.swapper_project_link :nth-child(1) {
   font-size: 32px;
-  filter:invert(1);
+  /* filter:invert(1); */
 }
-/* @media screen and (max-width: 410px) {
+ @media screen and (min-width: 420px) and (max-width: 700px) {
   .Swipper_Project_card_container {
     margin-left: 8%;
     margin-right: 3%;
   }
   .Swipper_Project_card {
-    width: 300px;
-    height: 350px;
+    width: 400px;
+    height: 550px;
     border: 1px solid gray;
+  background-color: hsl(219deg 54.01% 4.8%);
+
     border-radius: 20px;
     display: flex;
-    margin: 17px;
+    flex-direction: column;
+    margin: 40% auto;
     padding: 10px;
   }
   .Swipper_Project_card h2 {
@@ -136,7 +139,7 @@
     color: white;
     font-size: 17px;
   }
-  .project_link {
+.swapper_project_link {
     flex-direction: row;
     display: flex;
     justify-content: center;
@@ -146,7 +149,23 @@
     text-decoration: none;
     color: white;
   }
+  .project-content{
+    width: 72%;
+    gap: 0.5rem;
+  }
+  .Swipper_Project_card img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 39%;
+    border-radius: 1rem;
+    padding: 0rem;
+    width: 90%;
+    margin-top: 12px;
+    object-fit: cover;
+    object-position: center;
 }
+}
+
+
 
 @media (min-width: 420px) and (max-width: 1300px) {
   .btn {
@@ -159,26 +178,39 @@
     font-size: 13px;
   }
   .Swipper_Project_card {
-    width: 342px;
-    height: 459px;
-    border: 1px solid gray;
-    border-radius: 20px;
+    background-color: hsl(204.92deg 53.14% 31.98%);
+    width: 42rem;
+    height: 26rem;
+    border-radius: 14px;
     display: flex;
-    margin: 25px;
-    padding: 35px;
+    margin: 17rem auto;
+    padding: 45px;
+  
   }
   .Swipper_Project_card p {
     color: gray;
-    font-size: 13px;
-    margin-top: 23px;
+    font-size: 14px;
+    margin-top: 15px;
   }
-  .project_link {
+  .Swipper_Project_card p:nth-child(2) {
+    color: white;
+    font-size: 11px;
+    margin-top: 14px;
+}
+  .swapper_project_link {
     flex-direction: row;
     display: flex;
     justify-content: center;
     width: 26%;
     font-size: 16px;
-    gap: 12rem;
+    gap: 8rem;
     line-height: 75px;
   }
-} */
+  .project-content {
+    display: flex;
+    width: 33%;
+    gap: 1rem;
+    flex-direction: column;
+}
+  
+} 

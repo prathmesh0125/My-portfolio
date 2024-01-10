@@ -32,8 +32,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .Project_card {
   width: 310px;
@@ -138,8 +138,8 @@
     margin-right: 3%;
   }
   .Project_card {
-    width: 300px;
-    height: 350px;
+    width: 270px;
+    height: 340px;
     border: 1px solid gray;
     border-radius: 20px;
     display: flex;
@@ -148,28 +148,34 @@
   }
   .Project_card h2 {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 20px;
   }
  
+
+.Project_card p {
+    color: gray;
+    font-size: 11px;
+    margin-top: 13px;
+}
   .Project_card p:nth-child(1) {
     color: white;
-    font-size: 17px;
+    font-size: 14px;
 
   }
   .project_link {
     flex-direction: row;
     display: flex;
     justify-content: center;
-    width: 36%;
-    gap: 11rem;
+    width: 41%;
+    gap: 8rem;
     line-height: 77px;
     text-decoration: none;
     color: white;
   }
 }
 
-@media (min-width: 420px) and (max-width: 1300px) {
+@media (min-width: 700px) and (max-width: 1300px) {
   .btn {
     position: relative;
     width: 99px;
@@ -180,26 +186,62 @@
     font-size: 13px;
   }
   .Project_card {
-    width: 342px;
-    height: 459px;
+    width: 300px;
+    height: 400px;
     border: 1px solid gray;
     border-radius: 20px;
     display: flex;
-    margin: 25px;
+    margin: 20px;
     padding: 35px;
   }
+ 
   .Project_card p {
     color: gray;
-    font-size: 13px;
-    margin-top: 23px;
-  }
+    font-size: 12px;
+    margin-top: 10px;
+}
   .project_link {
     flex-direction: row;
     display: flex;
     justify-content: center;
-    width: 26%;
+    width: 30%;
     font-size: 16px;
-    gap: 12rem;
+    gap:10rem;
     line-height: 75px;
+}
+}
+
+@media (min-width: 420px) and (max-width: 700px){
+
+  .project_card_container {
+    gap: 1.5rem;
+  }
+.Project_card {
+    width: 250px;
+    height: 350px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    margin: 2px;
+    padding: 29px;
+}
+.Project_card p {
+  color: gray;
+  font-size: 10px;
+  margin-top: 8px;
+
+}
+.project_link {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  font-size: 14px;
+  gap: 8rem;
+}
+.project_card_container {
+  
+  margin-left: 0%;
+  margin-right: 0%;
 }
 }

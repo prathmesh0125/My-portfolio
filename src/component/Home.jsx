@@ -115,8 +115,8 @@ const Home = () => {
                   </a>
                 </div>
                 <div className="Homebutton">
-          <button class="btn-Home color-1"><Link to="mailto:bidveprathmesh590@gmail.com">Contact Me</Link></button>
-          <button class="btn-Home color-2"><Link to="/Project">Projects  <span><FaExternalLinkAlt /></span></Link></button>
+          <button className="btn-Home color-1"><Link to="mailto:bidveprathmesh590@gmail.com">Contact Me</Link></button>
+          <button className="btn-Home color-2"><Link to="/Project">Projects  <span><FaExternalLinkAlt /></span></Link></button>
           </div>
                 </div>
                 

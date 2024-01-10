@@ -17,7 +17,7 @@ const Footer = () => {
 
         </Link> */}
         <div className="button2">
-          <button class="btn-hov color-6">
+          <button className="btn-hov color-6">
             <Link to="mailto:bidveprathmesh590@gmail.com">Contact Me</Link>
           </button>
         </div>

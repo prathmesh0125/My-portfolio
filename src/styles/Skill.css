@@ -102,18 +102,18 @@
   font-size: 2.7em;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (min-width: 410px)and (max-width: 500px) {
   .card_container {
     margin-left: 8%;
     margin-right: 3%;
   }
   .card {
-    width: 106px;
-    height: 107px;
+    width: 104px;
+    height: 106px;
     border: 1px solid gray;
     border-radius: 20px;
     display: flex;
-    margin: 17px;
+    margin: 25px;
     padding: 10px;
   }
   .card h2 {
@@ -121,6 +121,11 @@
     font-size: 13px;
     line-height: 23px;
   }
+  .container {
+    padding: 0rem;
+  border-radius: 0px 0px;
+
+}
 }
 
 @media (min-width: 420px) and (max-width: 1300px) {

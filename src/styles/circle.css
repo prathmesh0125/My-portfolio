@@ -1,0 +1,164 @@
+
+.circle-container {
+  font-size: 10px;
+  width: 25rem;
+  height: 37em;
+  /* background-color: black; */
+  text-align: center;
+  /* margin-left: 33%; */
+  position: relative;
+}
+.sun h1{
+  text-align: center;
+  font-size: 1rem;
+  margin: 1.8rem 0rem;
+}
+.sun {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  width: 5rem;
+  color: black;
+  text-align: center;
+  margin: 10;
+  height: 5rem;
+  background-color: rgb(255, 89, 0);
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 1em rgb(38, 37, 37);
+}
+/* <<<<<<--------------------MErscry ------------------>>>>>>>>>*/
+/* express */
+
+.MongoDB {
+  top: 13em;
+  left: 13em;
+  width: 14em;
+  height: 14em;
+  /* height: 20em; */
+  animation: orbit 15s linear infinite;
+}
+.MongoDB::before {
+  top: 1.6em;
+  right: 1em;
+  width: 1rem;
+  height: 1em;
+  /* background-color: rgb(32, 22, 7); */
+  /* box-shadow: 0 0 1em white; */
+}
+.express {
+  top: 9em;
+  left: 9em;
+  width: 22em;
+  height: 22em;
+  animation: orbit 12s linear infinite;
+}
+.express::before {
+  top: 1.8em;
+  right: 1.8em;
+  width: 2em;
+  height: 2em;
+  /* background-color: rgb(25, 0, 255); */
+  /* box-shadow: 0 0 1em rgba(234, 241, 234, 0.877); */
+}
+/* --------------------------React ---------------------------->>>>>>> */
+.React,
+.moon,
+.express,
+.MongoDB,
+.mars
+{
+  position: absolute;
+  border-style: solid;
+  /* border-color: white transparent transparent transparent; */
+  border-width: 0.1em 0.1em 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 1em rgba(53, 54, 53, 0.877);
+}
+.React {
+  top: 5em;
+  left: 5em;
+  width: 30em;
+  height: 30em;
+  animation: orbit 16s linear infinite;
+}
+.moon {
+  top: 0;
+  right: 0;
+  width: 8em;
+  height: 8em;
+  animation: orbit 18s linear infinite;
+}
+.React::before,
+.moon::before,
+.express::before,
+.MongoDB::before,
+.mars::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.React::before {
+  top: 2.8em;
+  right: 2.8em;
+  width: 3em;
+  height: 3em;
+  /* background-color: aqua; */
+  /* box-shadow: 0 0 1em rgb(235, 225, 225); */
+}
+
+
+/*  */
+/* mars */
+
+.mars {
+  top: 1em;
+  left: 1em;
+  width: 24rem;
+  height: 24rem;
+  animation: orbit 20s linear infinite;
+}
+.mars::before {
+  top: 1em;
+  right: 8em;
+  width: 2em;
+  height: 2em;
+  /* background-color: rgb(252, 8, 8);
+  box-shadow: 0 0 1em rgb(111 8 8); */
+}
+
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MongoDB img{
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: rgb(229, 233, 233); */
+  border-radius: 50%;
+  margin: 0 6rem;
+}
+.express img{
+    width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: rgb(229, 233, 233); */
+  border-radius: 50%;
+  margin: 0 10rem;
+}
+.React img{
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: rgb(229, 233, 233); */
+  border-radius: 50%;
+  margin: 0rem 13rem;
+}
+.mars img{
+  width: 2.5rem;
+  height: 2.5rem;
+  /* background-color: rgb(229, 233, 233); */
+  border-radius: 50%;
+  margin: 0 16rem;
+}

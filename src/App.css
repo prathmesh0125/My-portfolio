@@ -1,0 +1,23 @@
+* {
+  /* cursor: url("/cursor.png"),auto; */
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  /* background-size: cover; */
+  /* filter: grayscale(100); */
+  /* background: url("herobg.png") no-repeat center; */
+  /* z-index: -3; */
+}
+
+body::-webkit-scrollbar{
+  background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+  /* background: linear-gradient(rgb(240, 5, 5),rgb(90, 2, 2),rgb(0, 128, 105)); */
+  background-color:black;
+  /* border-radius: 20px; */
+}
+.disbale{
+  background-color: rgb(237,237,237) !important;
+  cursor: not-allowed !important;
+}

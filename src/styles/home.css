@@ -1,0 +1,405 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+  
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  } */
+#main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+}
+.back {
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+}
+.back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background-image: url("/src/images/clint-patterson-dYEuFB8KQJk-unsplash.jpg");
+  background-size: cover;
+  background-position: center; */
+}
+h1 .Typewriter {
+  top: 100%;
+  left: 0;
+  /* position: absolute; */
+  line-height: 1.33;
+  /* font-family: "kajiro"; */
+  font-weight: 600;
+  font-size: 3.6vw;
+  /* color: red !important; */
+}
+.typewriterpara:nth-child(even) {
+  color: green;
+}
+
+.top {
+  pointer-events: all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+
+  /* background-color: black; */
+}
+.workarea {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 1920px;
+  position: relative;
+  /* background-color:black; */
+  /* border: 1px solid red; */
+}
+.nav {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav img {
+  height: 30px;
+  filter: invert(1);
+}
+.nleft,
+.nright {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav a {
+  pointer-events: all;
+
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.hero {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  /* padding: 2rem; */
+  height: 68%;
+  width: 100%;
+  transform: translate("0", "-50%");
+  display: flex;
+  justify-content: space-between;
+  /* background-color:#f0f0f0; */
+}
+.heroleft {
+  min-width: 50%;
+  /* background-color: yellow; */
+}
+.heroleft .elem {
+  position: relative;
+  height: 80vw;
+  /* background-color: red; */
+  overflow: hidden;
+  animation: slideformleft 1s ease forwards;
+}
+@keyframes slideformleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+.heroleft .elem h1 {
+  top: 100%;
+  left: 0;
+  /* position: absolute; */
+  line-height: 0.9;
+  /* font-family: "kajiro"; */
+  font-weight: 600;
+  font-size: 3.6vw;
+
+  color: black;
+  padding: 11px;
+}
+
+.span {
+  color: #e80d11;
+}
+
+.typewriter {
+  color: black !important;
+}
+
+.heroright {
+  width: 50%;
+  color: antiquewhite;
+  padding: 0rem;
+  display: flex;
+  overflow: hidden;
+  gap: 5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  animation: slideformright 1s ease forwards;
+}
+#cursor {
+  height: 5vw;
+  width: 5vw;
+  position: fixed;
+  border-radius: 50%;
+  background: url(/public/apply-poster.png);
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+#cursor h5 {
+  font-size: 1.15vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-weight: 100;
+}
+@keyframes slideformright {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.heroright p {
+  font-size: 17px;
+  color: black;
+  font-weight: 300;
+  text-align: right;
+  width: 25rem;
+}
+.heroright .img {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-image: url("/src/images/clint-patterson-dYEuFB8KQJk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  /* border: none; */
+}
+.heroright p:nth-child(3) {
+  margin-bottom: 80px;
+}
+
+.Typewriter__cursor {
+  color: red;
+}
+.sociallink {
+  pointer-events: all;
+  display: flex;
+  color: black;
+  width: 484px;
+  align-items: center;
+  line-height: 59px;
+  justify-content: space-between;
+  font-size: 31px;
+  margin: 13px;
+}
+.sociallink > a:nth-child(2) {
+  color: red;
+}
+.sociallink > a:nth-child(3) {
+  color: rgba(238 0 141);
+}
+
+/* buttons */
+
+.Homebutton {
+  display: flex;
+  margin-top: 4%;
+  flex-direction: row;
+  gap: 7%;
+  margin-left: 2%;
+  text-align: center;
+}
+.btn-Home span {
+  font-size: 16px;
+  padding: 4px;
+}
+
+.btn-Home {
+  pointer-events: all;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  transition: all 0.4s ease-in-out;
+}
+.btn-Home a {
+  text-decoration: none;
+  color: black;
+}
+.btn-Home:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* .btn-hover:focus {
+ outline: none;
+} */
+.btn-Home.color-1 {
+  background-image: linear-gradient(
+    to right,
+    #d11513,
+    #892c2c,
+    #1999ee,
+    #380bde
+  );
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-Home.color-2 {
+  background-image: linear-gradient(
+    to left,
+    #d11513,
+    #892c2c,
+    #1999ee,
+    #380bde
+  );
+  /* background-image: linear-gradient(to right, #eb1010, #e80202, #380bde, #380bde); */
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+@media screen and (max-width: 420px) {
+  .heroleft .elem {
+    position: relative;
+    height: 90vw;
+    /* background-color: red; */
+    overflow: hidden;
+    /* height: 66vw; */
+  }
+  .btn-Home {
+    width: 117px;
+    font-size: 15px;
+  }
+  .heroright {
+    display: none;
+  }
+  .sociallink {
+    pointer-events: all;
+    display: flex;
+    width: 266px;
+    align-items: center;
+    justify-content: center;
+    line-height: 58px;
+    justify-content: space-between;
+    font-size: 23px;
+  }
+  .heroleft .elem h1 {
+    line-height: 0.9;
+    /* font-family: "kajiro"; */
+    font-weight: 100;
+    font-size: 7vw;
+    color: black;
+  }
+  h1 .Typewriter {
+    line-height: 1.33;
+    /* font-family: "kajiro"; */
+    font-weight: 100;
+    font-size: 7vw;
+    color: black;
+  }
+}
+@media (min-width: 420px) and (max-width: 920px) {
+  .hero {
+    top: 10%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .heroleft .elem {
+    position: relative;
+    height: 40vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.heroleft .elem h1 {
+  
+  font-size: 2rem;
+}
+.heroright p {
+ display: none;
+}
+.heroright{
+  width: 82%;
+}
+.sociallink {
+  display: flex;
+  line-height: 14px;
+  align-items: center;
+  width: 425px;
+  font-size: 3vw;
+}
+}
+
+
+
+@media (min-width: 420px) and (max-width: 1300px) {
+
+
+  
+
+
+
+
+  .heroleft .elem {
+    position: relative;
+    /* height: 70vw; */
+    /* background-color: red; */
+    overflow: hidden;
+  }
+  .heroleft .elem h1 {
+    top: 100%;
+    left: 0;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+  .btn-Home {
+    width: 150px;
+  }
+  h1 .Typewriter {
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .sociallink {
+    display: flex;
+    /* line-height: 77px; */
+    align-items: center;
+    width: 425px;
+    font-size: 3vw;
+  }
+  .sociallink h1 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}

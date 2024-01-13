@@ -346,6 +346,10 @@ h1 .Typewriter {
 .heroright{
   display:none ;
 }
+.Homebutton {
+  margin-top: 2%;
+ 
+}
 .heroleft .elem {
   position: relative;
   height: 83vw;
@@ -357,10 +361,9 @@ h1 .Typewriter {
 }
 @media (min-width: 420px) and (max-width: 650px) {
   .hero {
-    top: 11%;
-    gap: 2rem;
-    height: 97%;
-    flex-direction: column
+    top: 4%;
+    height: 100%;
+    flex-direction: column;
   }
   .heroleft .elem {
       position: relative;
@@ -383,6 +386,8 @@ h1 .Typewriter {
   margin: 0 auto;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .sociallink {
   display: flex;
@@ -410,7 +415,7 @@ h1 .Typewriter{
   .heroleft .elem h1 {
     top: 100%;
     left: 0;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 2rem;
   }
   .btn-Home {
@@ -418,7 +423,7 @@ h1 .Typewriter{
   }
   h1 .Typewriter {
     font-size: 2rem;
-    font-weight: 100;
+    font-weight: 600;
   }
 
   .sociallink {

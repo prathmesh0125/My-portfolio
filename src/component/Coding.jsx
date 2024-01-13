@@ -37,6 +37,8 @@ const Coding = () => {
 
 
         <h2>Coding Profile</h2>
+    {/* <h2 class="Test-Title">Coding Profile</h2> */}
+
       <div className="ProfileContainer">
       {profile.map(({ src, link, alt, p,p1 }) => (
         <div className="Profilecard" key={src}>

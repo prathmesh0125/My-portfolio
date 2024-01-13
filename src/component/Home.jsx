@@ -5,39 +5,39 @@ import Skill from "./Skill";
 import Coding from "./Coding";
 import Project from "./Project";
 import Typewriter from "typewriter-effect";
-import { FaExternalLinkAlt  } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import gsap from 'gsap';
+import gsap from "gsap";
 import Circle from "./Circle";
 import Testimonial from "./Testimonial";
-
+import Certificate from "./Certificate";
 
 const Home = () => {
   const CursorEffect = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
     const [cursorStyle, setCursorStyle] = useState({ scale: 0, opacity: 0 });
-  
+
     const handleMouseMove = (e) => {
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
-  
+
     const handleMouseEnter = () => {
       setCursorStyle({ scale: 1, opacity: 1 });
     };
-  
+
     const handleMouseLeave = () => {
       setCursorStyle({ scale: 0, opacity: 0 });
     };
-  
+
     useEffect(() => {
       const page1 = document.querySelector(".Home");
-  
+
       if (page1) {
         page1.addEventListener("mousemove", handleMouseMove);
         page1.addEventListener("mouseenter", handleMouseEnter);
         page1.addEventListener("mouseleave", handleMouseLeave);
       }
-  
+
       return () => {
         // Clean up the event listeners on component unmount
         if (page1) {
@@ -47,7 +47,7 @@ const Home = () => {
         }
       };
     }, []); // Empty dependency array ensures that the effect runs only once on mount
-  
+
     useEffect(() => {
       // Use gsap.to with cursorStyle values
       gsap.to("#cursor", {
@@ -57,27 +57,30 @@ const Home = () => {
         opacity: cursorStyle.opacity,
       });
     }, [cursorPosition, cursorStyle]);
-  }
- 
+  };
 
   return (
     <div className="Home">
       <div id="main">
-        <div className="back">
-      
-        </div>
+        <div className="back"></div>
         <div className="top">
           <div className="workarea">
-        <div id="cursor">  
-          {CursorEffect()}
-          {/* <h5>explore</h5> */}
-        </div>
+            <div id="cursor">
+              {CursorEffect()}
+              {/* <h5>explore</h5> */}
+            </div>
             {/* <Navbar/> */}
             <div className="hero">
               <div className="heroleft">
                 <div className="elem">
-                  <h1> Hi ,I Am<br/><br/>
-            <span className="span" >P</span>rathmesh <span className="span">B</span>idve</h1>
+                  <h1>
+                    {" "}
+                    Hi ,I Am
+                    <br />
+                    <br />
+                    <span className="span">P</span>rathmesh{" "}
+                    <span className="span">B</span>idve
+                  </h1>
                   <h1 className="typewriter">
                     <Typewriter
                       options={{
@@ -93,35 +96,44 @@ const Home = () => {
                       }}
                     />
                   </h1>
-                  <h1>Mentor</h1>
+                  {/* <h1>Mentor</h1> */}
                   <div className="sociallink">
-                  <h3>Connect Me:</h3>
-                  <a
-                    href="http://github.com/prathmesh0125"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BsGithub />
-                  </a>
-                  <a
-                    href="http://github.com/prathmesh0125"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <BsInstagram />
-                  </a>
-                  <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <BsLinkedin />
-                  </a>
+                    <h3>Connect Me:</h3>
+                    <a
+                      href="http://github.com/prathmesh0125"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                    <a
+                      href="http://github.com/prathmesh0125"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <BsInstagram />
+                    </a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      <BsLinkedin />
+                    </a>
+                  </div>
+                  <div className="Homebutton">
+                    <button className="btn-Home color-1">
+                      <Link to="mailto:bidveprathmesh590@gmail.com">
+                        Contact Me
+                      </Link>
+                    </button>
+                    <button className="btn-Home color-2">
+                      <Link to="/Project">
+                        Projects{" "}
+                        <span>
+                          <FaExternalLinkAlt />
+                        </span>
+                      </Link>
+                    </button>
+                  </div>
                 </div>
-                <div className="Homebutton">
-          <button className="btn-Home color-1"><Link to="mailto:bidveprathmesh590@gmail.com">Contact Me</Link></button>
-          <button className="btn-Home color-2"><Link to="/Project">Projects  <span><FaExternalLinkAlt /></span></Link></button>
-          </div>
-                </div>
-                
-   
-                
+
                 {/* <button>Contact Me</button> */}
               </div>
               <div className="heroright">
@@ -132,7 +144,7 @@ const Home = () => {
                   I'm a dedicated developer with a passion for crafting
                   innovative software solutions that solve real-world problems
                 </p> */}
-                <Circle/>
+                <Circle />
                 <p>
                   My portfolio showcases my journey in the world of technology,
                   highlighting my skills and commitment to excellence.
@@ -143,15 +155,15 @@ const Home = () => {
         </div>
       </div>
       <div>
-
-      {/* <Portfolio/> */}
-      <Project />
+        {/* <Portfolio/> */}
+        <Project />
       </div>
       {/* <Projectswapper/> */}
 
       <Skill />
-      <Testimonial/>
+      <Testimonial />
       {/* <MySwapper/> */}
+      <Certificate />
       <Coding />
     </div>
   );

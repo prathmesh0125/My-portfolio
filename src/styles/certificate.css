@@ -1,0 +1,45 @@
+.course_container {
+  /* background-color: hsl(219deg 54.01% 4.8%); */
+  /* background-color: hsl(243deg 27.35% 75.27%); */
+  /* background-color: hsl(219deg 54.01% 4.8%); */
+
+  /* background-image: url("/public/tech/img5.jpg"); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 100px 100px;
+  width: 90%;
+}
+.course {
+  width: 350px;
+  margin: 6% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(219deg 54.01% 4.8%);
+
+  backdrop-filter: blur(10px);
+  gap: 1rem;
+  padding: 36px;
+  justify-content: space-between;
+  box-Shadow: 0px 0px 6px 1px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.course img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+
+}
+
+.course .course_name{
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+}
+.course .course_institute{
+  color: gray;
+  font-size: 13px;
+  margin-top: 13px;
+}

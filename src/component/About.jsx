@@ -8,7 +8,7 @@ const About = () => {
       </div>
       <div className="aboutcontainer2">
         <div>
-          <img src="tech/profile.png" alt="" srcset="" />
+          <img src="tech/profile.png" alt="" />
           <p style={{ margin:"1vmax 0",fontSize:"24px", color: "hsl(42.06deg 90.45% 52.07%)", paddingTop: "5vmax" }}>
             Prathmesh Bidve
           </p>

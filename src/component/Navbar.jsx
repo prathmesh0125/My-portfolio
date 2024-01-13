@@ -1,36 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import '../styles/nav.css';
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "../styles/nav.css";
 
 const Navbar = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
+
+  const closeMenu = () => {
+    setIsChecked(false);
+  };
+
   return (
     <div>
       <nav>
         <div className="logo">Prathmesh</div>
-        <input type="checkbox" id="click" />
+        <input type="checkbox" id="click" checked={isChecked} onChange={handleCheckboxChange} />
         <label htmlFor="click" className="menu-btn">
-          <i><FaBars/></i>
+          {isChecked ? <i><FaTimes /></i> : <i><FaBars /></i>}
         </label>
         <ul>
-        {/* <Link to="/Home" className="footerContact"> */}
-
           <li>
-            <Link className="active" to="/">
+            <Link className="active" to="/" onClick={closeMenu}>
               Home
             </Link>
           </li>
           <li>
-            {/* <a href="/_Project/NavBar/About.html">About</a> */}
+            <Link to="/Project" onClick={closeMenu}>
+              Project
+            </Link>
           </li>
           <li>
-            <Link to="/Project">Project</Link>
+            <Link to="/About" onClick={closeMenu}>
+              About
+            </Link>
           </li>
           <li>
-            <Link to="/About">About</Link>
-          </li>
-          <li>
-            <Link className="contact" to="/Contact">Contact</Link>
+            <Link className="contact" to="/Contact" onClick={closeMenu}>
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

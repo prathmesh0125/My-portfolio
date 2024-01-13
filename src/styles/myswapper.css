@@ -80,6 +80,15 @@
   line-height: 30px;
 }
 
+.swapper_project_link {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  width: 26%;
+  font-size: 16px;
+  gap: 12rem;
+  line-height: 75px;
+}
 .Swipper_Project_card p {
   color: rgb(19 187 192);
   font-size: 17px;
@@ -126,7 +135,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 40% auto;
+    margin: 33% auto;
     padding: 10px;
   }
   .Swipper_Project_card h2 {
@@ -167,7 +176,7 @@
 
 
 
-@media (min-width: 420px) and (max-width: 1300px) {
+@media (min-width: 700px) and (max-width: 1300px) {
   .btn {
     position: relative;
     width: 99px;

@@ -12,7 +12,9 @@ const Project = () => {
       name: "Music Palyer",
       description:"Designed a captivating UI in HTML and CSS, featuring album art and intuitive playback controls. Implemented real-time audio playback in React, ensuring seamless user experience with modular components for efficient state management.",
       techstack:"#Reactjs #javascript #css #html ",
-      github:<BsGithub/>
+      github:<BsGithub/>,
+      link:""
+
 
     },
     {
@@ -22,7 +24,8 @@ const Project = () => {
       name: "Weather app",
       description:"Enhanced visual appeal with custom CSS and Bootstrap in a user-friendly interface. Leveraged API-Ninjas for real-time weather updates, integrating JavaScript for seamless, responsive user interactions",
       techstack:"#javascript #css #html ",
-      github:<BsGithub/>
+      github:<BsGithub/>,
+      link:" ",
 
     },
     {
@@ -90,7 +93,6 @@ const Project = () => {
               <Link to="" style={{color:"white"}}>{github}</Link>
                   
               <Link to="" style={{color:"white"}}>Demo</Link>
-
               </div>
             </div>
           ))}

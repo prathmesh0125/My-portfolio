@@ -73,6 +73,9 @@
   }
   .Profilecard h2 {
     margin: 10%;
+    font-size: 1.875rem;
+    font-weight: bold;
+  
   }
   .Profilecard p {
     margin: 0px 27px;

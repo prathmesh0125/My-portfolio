@@ -39,7 +39,7 @@ const Testimonial = () => {
         <h2 class="Test-Title">What Others Say About Me</h2>
         <div class="testimonial-grid">
             {Testimonials.map (({id,Text,personname,post,img,href})=> (
-          <div class="testimonial-card" key={id}>
+          <div class="testimonial-card" key={post}>
               <div class="testimnial-text">
               {Text}
               </div>

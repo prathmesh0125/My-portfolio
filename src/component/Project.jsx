@@ -13,7 +13,7 @@ const Project = () => {
       description:"Designed a captivating UI in HTML and CSS, featuring album art and intuitive playback controls. Implemented real-time audio playback in React, ensuring seamless user experience with modular components for efficient state management.",
       techstack:"#Reactjs #javascript #css #html ",
       github:<BsGithub/>,
-      link:""
+      link:"https://github.com/prathmesh0125/Music_player"
 
 
     },
@@ -25,7 +25,7 @@ const Project = () => {
       description:"Enhanced visual appeal with custom CSS and Bootstrap in a user-friendly interface. Leveraged API-Ninjas for real-time weather updates, integrating JavaScript for seamless, responsive user interactions",
       techstack:"#javascript #css #html ",
       github:<BsGithub/>,
-      link:" ",
+      link:"https://github.com/prathmesh0125/WeatherInfo.github.io",
 
     },
     {
@@ -35,7 +35,8 @@ const Project = () => {
       name: "Top-Headline",
       description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
       techstack:" #css #html ",
-      github:<BsGithub/>
+      github:<BsGithub/>,
+      link:"https://github.com/prathmesh0125/Top-Headline.github.io"
 
     },
     {
@@ -45,17 +46,22 @@ const Project = () => {
       name: "Text-Analyzer",
       description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
       techstack:"#Reactjs #javascript #bootstrap #css #html ",
-      github:<BsGithub/>
+      github:<BsGithub/>,
+      link:"https://github.com/prathmesh0125/Text-Analyzer"
+
+
 
     },
     {
       id: 5,
-      src: "project/Blog website.png",
+      src: "project/Education.png",
       alt: "loading",
-      name: "Blog Websie",
+      name: "Study Sync",
       description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
       techstack:" #css #html ",
-      github:<BsGithub/>
+      github:<BsGithub/>,
+      link:"https://github.com/prathmesh0125/Studysync"
+
 
     },
     {
@@ -65,7 +71,20 @@ const Project = () => {
       name: "Blog Websie",
       description:"Enhanced visual appeal with custom CSS and Bootstrap in a user-friendly interface. Leveraged API-Ninjas for real-time weather updates, integrating JavaScript for seamless, responsive user interactions",
       techstack:"  #html #css #javascript ",
-      github:<BsGithub/>
+      github:<BsGithub/>,
+      link:" "
+
+    },
+    {
+      id: 7,
+      src: "project/Blog website.png",
+      alt: "loading",
+      name: "Blog Websie",
+      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
+      techstack:" #css #html ",
+      github:<BsGithub/>,
+      link:"https://github.com/prathmesh0125/Blogs_project"
+
 
     },
     
@@ -78,7 +97,7 @@ const Project = () => {
           className= "project_card_container"
           // style={{ boxShadow: " 0px 16px 47px 15px black" }}
         >
-          {projectWork.map(({ id, src, alt, name,description,techstack,github }) => (
+          {projectWork.map(({ id, src, alt, name,description,techstack,github,link }) => (
             <div
               key={id}
               className="Project_card"
@@ -90,7 +109,7 @@ const Project = () => {
               <p>{techstack}</p>
               <div className='project_link'>
               
-              <Link to="" style={{color:"white"}}>{github}</Link>
+              <Link to={link} style={{color:"white"}}>{github}</Link>
                   
               <Link to="" style={{color:"white"}}>Demo</Link>
               </div>

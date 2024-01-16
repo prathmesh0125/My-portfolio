@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -23,28 +22,11 @@ export default function App() {
     },
     {
       id: "c2",
-      img: "tech/git.jpg",
-      certificate: "Git",
+      img: "tech/javascript.jpg",
+      certificate: "javascript",
       institute: "Udemy",
     },
-    {
-      id: "c2",
-      img: "tech/git.jpg",
-      certificate: "Git",
-      institute: "Udemy",
-    },
-    {
-      id: "c2",
-      img: "tech/git.jpg",
-      certificate: "Git",
-      institute: "Udemy",
-    },
-    {
-      id: "c2",
-      img: "tech/git.jpg",
-      certificate: "Git",
-      institute: "Udemy",
-    },
+  
   ];
     const breakpoints = {
       // Define breakpoints for different screen sizes
@@ -71,7 +53,7 @@ export default function App() {
     };
   return (
     <>
-    <h2 class="Test-Title">Certification</h2>
+    <h2 id="certificate" class="Test-Title">Certification</h2>
 
       <Swiper
         className="course_container"

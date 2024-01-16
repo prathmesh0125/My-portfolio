@@ -43,3 +43,16 @@
   font-size: 13px;
   margin-top: 13px;
 }
+@media screen and (max-width:700px) {
+  .course{
+    width: 300px;
+    height: 350px;
+    margin: 40px auto;
+    width: 80%;
+  }
+  .course img{
+    height: 170px;
+    width:261px ;
+    border-radius: 20px;
+  }
+}

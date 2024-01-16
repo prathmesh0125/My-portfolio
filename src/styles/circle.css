@@ -36,7 +36,7 @@
   width: 14em;
   height: 14em;
   /* height: 20em; */
-  animation: orbit 15s linear infinite;
+  animation: orbit 18s linear infinite;
 }
 .MongoDB::before {
   top: 1.6em;
@@ -51,15 +51,14 @@
   left: 9em;
   width: 22em;
   height: 22em;
-  animation: orbit 12s linear infinite;
+  animation: orbit 16s linear infinite;
 }
 .express::before {
   top: 1.8em;
   right: 1.8em;
   width: 2em;
   height: 2em;
-  /* background-color: rgb(25, 0, 255); */
-  /* box-shadow: 0 0 1em rgba(234, 241, 234, 0.877); */
+ 
 }
 /* --------------------------React ---------------------------->>>>>>> */
 .React,
@@ -80,15 +79,15 @@
   left: 5em;
   width: 30em;
   height: 30em;
-  animation: orbit 16s linear infinite;
+  animation: orbit 20s linear infinite;
 }
-.moon {
+/* .moon {
   top: 0;
   right: 0;
   width: 8em;
   height: 8em;
   animation: orbit 18s linear infinite;
-}
+} */
 .React::before,
 .moon::before,
 .express::before,
@@ -116,15 +115,14 @@
   left: 1em;
   width: 24rem;
   height: 24rem;
-  animation: orbit 20s linear infinite;
+  animation: orbit 22s linear infinite;
 }
 .mars::before {
   top: 1em;
   right: 8em;
   width: 2em;
   height: 2em;
-  /* background-color: rgb(252, 8, 8);
-  box-shadow: 0 0 1em rgb(111 8 8); */
+
 }
 
 
@@ -137,28 +135,105 @@
 .MongoDB img{
   width: 2.5rem;
   height: 2.5rem;
-  /* background-color: rgb(229, 233, 233); */
-  border-radius: 50%;
+  border-radius: 19%;
   margin: 0 6rem;
+  background-color: #054100;
+
 }
 .express img{
     width: 2.5rem;
   height: 2.5rem;
-  /* background-color: rgb(229, 233, 233); */
-  border-radius: 50%;
+  border-radius: 19%;
+  background-color: hsl(0deg 0% 0.9%);
+
   margin: 0 10rem;
 }
 .React img{
   width: 2.5rem;
   height: 2.5rem;
-  /* background-color: rgb(229, 233, 233); */
-  border-radius: 50%;
+  border-radius: 19%;
   margin: 0rem 13rem;
+  background-color: black;
+
 }
 .mars img{
   width: 2.5rem;
   height: 2.5rem;
-  /* background-color: rgb(229, 233, 233); */
-  border-radius: 50%;
+  background-color: #000;
+
+  border-radius: 19%;
   margin: 0 16rem;
+}
+@media screen and (max-width:420px) {
+  .sun {
+    position: absolute;
+    top: 53%;
+    left: 48.5%;
+    width: 5rem;
+    color: black;
+    text-align: center;
+    margin: 10;
+    /* height: 5rem; */
+    background-color: rgb(255, 89, 0);
+    border-radius: 47%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 1em rgb(38, 37, 37);
+}
+.MongoDB{
+  top: 13em;
+  left: 13em;
+  width: 13em;
+  height: 13em;
+  animation: orbit 15s linear infinite;
+
+}
+.express {
+  top: 10em;
+  left: 10em;
+  width: 12rem;
+  height: 12rem;
+  animation: orbit 12s linear infinite;
+}
+.React {
+  top: 7em;
+  left: 7em;
+  width: 16rem;
+  height: 16rem;
+  animation: orbit 16s linear infinite;
+}
+.mars {
+  top: 4em;
+  left: 2.6rem;
+  width: 20rem;
+  height: 20rem;
+  animation: orbit 20s linear infinite;
+}
+.MongoDB img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 19%;
+  margin: 5px 6rem;
+  background-color: #054100;
+}
+.mars img {
+  width: 2rem;
+  height: 2rem;
+  background-color: #000;
+  border-radius: 19%;
+  margin: 0 13rem;
+}
+.express img {
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(0deg 0% 0.9%);
+  border-radius: 19%;
+  margin: 0px 8rem;
+}
+.React img {
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 19%;
+  margin: 2rem 13rem;
+}
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaCode, FaTimes } from "react-icons/fa";
 import "../styles/nav.css";
 
 const Navbar = () => {
@@ -17,7 +17,14 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className="logo">Prathmesh</div>
+        <div className="logo">
+        {/* <a href="#logo" class="logo"> */}
+          <i><FaCode /></i>
+          <span className="logo-text">Portfolio</span>
+        {/* </a> */}
+          
+          {/* <i><FaCode /></i>Portfolio */}
+          </div>
         <input type="checkbox" id="click" checked={isChecked} onChange={handleCheckboxChange} />
         <label htmlFor="click" className="menu-btn">
           {isChecked ? <i><FaTimes /></i> : <i><FaBars /></i>}
@@ -33,6 +40,7 @@ const Navbar = () => {
               Project
             </Link>
           </li>
+        
           <li>
             <Link to="/About" onClick={closeMenu}>
               About

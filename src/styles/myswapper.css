@@ -11,7 +11,8 @@
   z-index: 1;
 }
 .Swipper_Project_card {
-  background-color: hsl(204.92deg 53.14% 31.98%);;
+  /* background-color: hsl(204.92deg 53.14% 31.98%); */
+  background-color: hsl(214.66deg 26.56% 44.6%);
 
   width: 65rem;
   height: 35rem;
@@ -39,7 +40,6 @@
   opacity: 0.1;
 }
 .Swipper_Project_card:hover {
-
   /* transform: scale(1.05); */
   box-shadow: 0px 0px 6px 1px blue;
 }
@@ -59,7 +59,7 @@
   display: flex;
   width: 34%;
   gap: 2rem;
-  flex-direction: column
+  flex-direction: column;
 }
 .Swipper_Project_card img {
   /* height: 26rem;
@@ -94,11 +94,11 @@
   font-size: 17px;
   margin-top: 13px;
 }
-.Swipper_Project_card .title{
+.Swipper_Project_card .title {
   color: black;
   font-size: 25px;
   font-weight: bold;
-  text-decoration: underline 4px white ;
+  text-decoration: underline 4px white;
 }
 /* .Swipper_Project_card .desc{
   color: rgb(221, 215, 206);
@@ -121,21 +121,20 @@
   font-size: 32px;
   /* filter:invert(1); */
 }
- @media screen and (min-width: 420px) and (max-width: 700px) {
+@media screen and (min-width: 350px) and (max-width: 700px) {
   .Swipper_Project_card_container {
     margin-left: 8%;
     margin-right: 3%;
   }
   .Swipper_Project_card {
-    width: 400px;
+    width: 350px;
     height: 550px;
     border: 1px solid gray;
-  background-color: hsl(219deg 54.01% 4.8%);
-
+    background-color: hsl(219deg 54.01% 4.8%);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 33% auto;
+    margin: 50% auto;
     padding: 10px;
   }
   .Swipper_Project_card h2 {
@@ -148,7 +147,7 @@
     color: white;
     font-size: 17px;
   }
-.swapper_project_link {
+  .swapper_project_link {
     flex-direction: row;
     display: flex;
     justify-content: center;
@@ -158,7 +157,7 @@
     text-decoration: none;
     color: white;
   }
-  .project-content{
+  .project-content {
     width: 72%;
     gap: 0.5rem;
   }
@@ -171,10 +170,8 @@
     margin-top: 12px;
     object-fit: cover;
     object-position: center;
+  }
 }
-}
-
-
 
 @media (min-width: 700px) and (max-width: 1300px) {
   .btn {
@@ -194,7 +191,6 @@
     display: flex;
     margin: 17rem auto;
     padding: 45px;
-  
   }
   .Swipper_Project_card p {
     color: gray;
@@ -205,7 +201,7 @@
     color: white;
     font-size: 11px;
     margin-top: 14px;
-}
+  }
   .swapper_project_link {
     flex-direction: row;
     display: flex;
@@ -220,6 +216,5 @@
     width: 33%;
     gap: 1rem;
     flex-direction: column;
+  }
 }
-  
-} 

@@ -21,50 +21,70 @@ export default function App() {
       src: "project/Barebeat.png",
       alt: "loading",
       name: "Music Palyer",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
+      description:"Designed a captivating UI in HTML and CSS, featuring album art and intuitive playback controls. Implemented real-time audio playback in React, ensuring seamless user experience with modular components for efficient state management.",
       techstack:"#Reactjs #javascript #css #html ",
-      github:<BsGithub/>
+      github:"https://github.com/prathmesh0125/Music_player",
+      link:"https://barebeat-player.netlify.app/"
+
 
     },
     {
       id: 2,
-      src: "project/Education.png",
+      src: "project/Top_Headline.png",
       alt: "loading",
-      name: "Education",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
-      techstack:"#Reactjs #javascript #css #html ",
-      github:<BsGithub/>
+      name: "Top-Headline",
+      description:" developed a responsive news web application leveraging the capabilities of React.js and integrating real-time news updates through the News API, offering users a modern and interactive platform to stay informed.",
+      techstack:" #css #html ",
+      github:"https://github.com/prathmesh0125/Top-Headline.github.io",
+      link:"https://github.com/prathmesh0125/Top-Headline.github.io"
 
     },
     {
       id: 3,
-      src: "project/Top_Headline.png",
+      src: "project/Text_analyzer.png",
       alt: "loading",
-      name: "Top-Headline",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
-      techstack:" #css #html ",
-      github:<BsGithub/>
+      name: "Text-Analyzer",
+      description:"I engineered a text analyzer application using React.js, enabling users to analyze and interpret textual content efficiently, providing valuable insights and enhancing user engagement with a dynamic and user-friendly interface",
+      techstack:"#Reactjs #javascript #css #html ",
+      github:"https://github.com/prathmesh0125/Text-Analyzer",
+      link:"https://prathmesh0125.github.io/Text-Analyzer/"
+
+
 
     },
     {
       id: 4,
-      src: "project/Text_analyzer.png",
+      src: "project/weather.png",
       alt: "loading",
-      name: "Text-Analyzer",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
-      techstack:"#Reactjs #javascript #bootstrap #css #html ",
-      github:<BsGithub/>
-
+      name: "Weather app",
+      description:"Enhanced visual appeal with custom CSS and Bootstrap in a user-friendly interface. Leveraged API-Ninjas for real-time weather updates, integrating JavaScript for seamless, responsive user interactions",
+      techstack:"#javascript #css #html ",
+      github:"https://github.com/prathmesh0125/WeatherInfo.github.io",
+      link:" https://prathmesh0125.github.io/WeatherInfo.github.io/",
+     
     },
     {
       id: 5,
+      src: "project/study.png",
+      alt: "loading",
+      name: "Study Sync",
+      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
+      techstack:" #css #html ",
+      github:"https://github.com/prathmesh0125/Studysync",
+      link:"https://studysynce.netlify.app/"
+
+
+    },
+  
+    {
+      id: 6,
       src: "project/Blog website.png",
       alt: "loading",
       name: "Blog Websie",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
+      description:"I crafted a dynamic blog website using the power of HTML and CSS, seamlessly blending aesthetic design with structured content for an engaging user experience",
       techstack:" #css #html ",
-      github:<BsGithub/>
-
+      github:"https://github.com/prathmesh0125/Blogs_project",
+      link:"https://myblogs1.netlify.app/"
     },
     
   ];
@@ -79,14 +99,14 @@ export default function App() {
           // clickable: false,
         }}
         
-        navigation={true}
+        // navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
         <h1 className='swpaper_title'>Projects</h1>
         <div className="swapper-container">
 
-          {projectWork.map(({ id, src, alt, name,description,techstack,github }) => (
+          {projectWork.map(({ id, src, alt, name,description,techstack,github,link }) => (
             <SwiperSlide>
             <div
               key={src}
@@ -101,9 +121,9 @@ export default function App() {
               <p className='desc'>{techstack}</p>
               <div className='swapper_project_link'>
               
-              <Link to="" style={{color:"white",fontSize:"34px" }}>{github}</Link>
+              <Link to={github} style={{color:"white",fontSize:"34px" }}><BsGithub/></Link>
                   
-              <Link to="" style={{color:"white"}}>Demo</Link>
+              <Link to={link} style={{color:"white"}}>Demo</Link>
               </div>
 
               </div>

@@ -20,7 +20,6 @@ function App() {
           <Route path="/Project" element={<Projectswapper/>} /> 
            <Route path="/About" element={<About />} /> 
            <Route path="/Contact" element={<Contact />} /> 
-           {/* <Route path="/account" element={< Login/>} /> */}
         </Routes>
         <Toaster className="toast"/>
         <Footer />

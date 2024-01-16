@@ -102,7 +102,7 @@
   font-size: 2.7em;
 }
 
-@media screen and (min-width: 410px)and (max-width: 500px) {
+@media screen and (min-width: 380px)and (max-width: 500px) {
   .card_container {
     margin-left: 8%;
     margin-right: 3%;

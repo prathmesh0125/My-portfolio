@@ -17,10 +17,30 @@
     flex-wrap: wrap;
     z-index: 99999;
   }
-  nav .logo{
+  /* nav .logo{
     color: black;
     font-size: 2rem;
     font-weight: 600;
+  } */
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+    gap: 0.625rem;
+  }
+  
+  .logo i {
+    /* height: 5.875rem; */
+    /* width: 1.938rem; */
+    color: rgb(18, 73, 149);
+    /* color:  hsl(219deg 54.01% 4.8%); */
+  }
+  .logo-text {
+    font-size: 2rem;
   }
   nav ul{
     display: flex;
@@ -73,9 +93,9 @@
     }
     nav ul{
       position: fixed;
-      top: 80px;
+      top: 65px;
       left: -100%;
-      background: #111;
+      background: #fafafa;;
       height: 100vh;
       z-index: 99999;
       width: 100%;
@@ -103,7 +123,11 @@
     nav ul li a.active,
     nav ul li a:hover{
       background: none;
-      color: cyan;
+      color: red;
+    }
+    nav ul li .contact{
+      color: black;
+      background:transparent;
     }
   }
   .content{
@@ -120,4 +144,26 @@
   .content div{
     font-size: 40px;
     font-weight: 700;
+  }
+  @media screen and (max-width: 420px) {
+    
+  .logo {
+    
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-left: -2rem;
+    color: #333333;
+  }
+  
+  .logo i {
+    line-height: 2px;
+    color: rgb(18, 73, 149);
+  }
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  nav{
+    height: 70px;
+    width: 100%;
+  }
   }

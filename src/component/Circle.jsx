@@ -6,13 +6,13 @@ const Circle = () => {
     <div>
        <div className="circle-container">
       <div className="sun"><h1>MERN</h1></div>
-      <div className="MongoDB"><img src="tech/mongodb.png" alt="" srcset=""/></div>
-      <div className="express"><img src="tech/redux.png" alt="" srcset=""/></div>
+      <div className="MongoDB"><img src="tech/mongodb.png" alt="" /></div>
+      <div className="express"><img src="tech/redux.png" alt="" /></div>
       <div className="React">
-        <img src="tech/reactjs.png" alt="" srcset=""/>
+        <img src="tech/reactjs.png" alt=""/>
       </div>
       <div className="mars">
-        <img src="tech/nodejs.png" alt="" srcset=""/>
+        <img src="tech/nodejs.png" alt="" />
       </div>
 
       </div>

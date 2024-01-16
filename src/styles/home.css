@@ -291,20 +291,35 @@ h1 .Typewriter {
 }
 
 @media screen and (max-width: 420px) {
+  .hero {
+    top: 9%;
+    height: 85%;
+    flex-direction: column;
+  }
   .heroleft .elem {
     position: relative;
-    height: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 76vw; */
+    align-items: center;
     /* background-color: red; */
     overflow: hidden;
-    /* height: 66vw; */
   }
   .btn-Home {
     width: 117px;
     font-size: 15px;
   }
   .heroright {
-    display: none;
+    margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   }
+  .heroright p {
+    display: none;
+   }
   .sociallink {
     pointer-events: all;
     display: flex;
@@ -317,20 +332,20 @@ h1 .Typewriter {
   }
   .heroleft .elem h1 {
     line-height: 0.9;
-    /* font-family: "kajiro"; */
-    font-weight: 100;
-    font-size: 7vw;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
     color: black;
   }
   h1 .Typewriter {
     line-height: 1.33;
-    /* font-family: "kajiro"; */
-    font-weight: 100;
-    font-size: 7vw;
+    font-weight: 600;
+    font-size: 2rem !important;
     color: black;
   }
 }
 @media (min-width: 650px) and (max-width: 920px) {
+
   h1 .Typewriter {
     top: 100%;
     left: 0;
@@ -361,7 +376,7 @@ h1 .Typewriter {
 }
 @media (min-width: 420px) and (max-width: 650px) {
   .hero {
-    top: 4%;
+    top: 7%;
     height: 100%;
     flex-direction: column;
   }

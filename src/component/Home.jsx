@@ -138,6 +138,8 @@ const Home = () => {
               </div>
               <div className="heroright">
                 {/* <p>Lorem ipsum dolor sit amet.</p>
+
+                
                 <div className="img">
                 </div>
                 <p>

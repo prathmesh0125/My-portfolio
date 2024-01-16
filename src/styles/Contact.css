@@ -25,7 +25,7 @@
     /* background-color: #f7f5f5; */
     position: absolute;
     border-radius: 0px 141px 0px 141px;
-    top: 54%;
+    top: 58%;
     box-shadow: 0 0 8px rgb(251 249 249);
     display: flex;
     justify-content: center;
@@ -169,4 +169,32 @@
     /* .btn-hover {
         width:220px;
     } */
+    /* Default styles for the toast messages */
+.toast {
+    margin-top: 20%;
+    width: 300px;
+  }
+  
+  /* Responsive styles for smaller screens */
+    .toast {
+      width: 100%;
+    }
+  
+  /* Additional styling for success messages */
+  .toast.success {
+    color: green; /* Use a suitable color for success messages */
+    margin-top: 25%;
+
+  }
+  
+  /* Additional styling for error messages */
+  .toast.error {
+    color: red;
+  }
+  
+  /* Center text within the toast */
+  .toast-content {
+    text-align: center;
+  }
+  
 }

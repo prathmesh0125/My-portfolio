@@ -32,13 +32,13 @@ const Footer = () => {
           <BsGithub />
         </a>
         <a
-          href="http://github.com/prathmesh0125"
+          href="https://www.instagram.com/prathmesh_bidve_03"
           target="_blank"
           rel="noopener noreferrer"
         >
           <BsInstagram />
         </a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/prathmesh-bidve-4658b5253/" target="_blank" rel="noopener noreferrer">
           <BsLinkedin />
         </a>
       </div>

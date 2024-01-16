@@ -26,26 +26,29 @@ const Contact = () => {
     e.preventDefault();
     setdisablebtn(true);
 
-    try{
+    try {
       await addDoc(collection(db, "contacts"), { name, email, message });
       toast.success("Message is sent", {
         style: {
-          marginTop: "5%",
-          color: "red",
+          color: "green", 
+          width: "100%", 
+          textAlign: "center", 
         },
       });
-    setdisablebtn(false);
-    setname("");
-    setemail("");
-    setmessage("");
-
-    }catch(error){
+      setdisablebtn(false);
+      setname("");
+      setemail("");
+      setmessage("");
+    } catch (error) {
       toast.error("Error", {
         style: {
-          marginTop: "5%",
+          margin: "10%",
           color: "red",
+          width: "100%", // Make the toast message take full width
+          textAlign: "center", // Center the text within the toast
         },
       });
+    
       console.log(error);
     setdisablebtn(false);
 

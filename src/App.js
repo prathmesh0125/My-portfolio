@@ -21,7 +21,7 @@ function App() {
            <Route path="/About" element={<About />} /> 
            <Route path="/Contact" element={<Contact />} /> 
         </Routes>
-        <Toaster className="toast"/>
+        <Toaster containerStyle={{marginTop:"11%"}} className="toast"/>
         <Footer />
       </Router>
     </div>

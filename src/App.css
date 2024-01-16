@@ -21,3 +21,11 @@ body::-webkit-scrollbar-thumb{
   background-color: rgb(237,237,237) !important;
   cursor: not-allowed !important;
 }
+
+@media screen and (max-width:420px) {
+  .toast {
+    margin-top: 50% !important;
+    width: 300px;
+  }
+  
+}

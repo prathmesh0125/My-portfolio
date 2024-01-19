@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="logo">
         {/* <a href="#logo" class="logo"> */}
           <i><FaCode /></i>
-          <span className="logo-text">P</span>
+          <span className="logo-text">Portfolio</span>
         {/* </a> */}
           
           {/* <i><FaCode /></i>Portfolio */}

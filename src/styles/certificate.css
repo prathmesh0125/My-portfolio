@@ -48,11 +48,23 @@
     width: 300px;
     height: 350px;
     margin: 40px auto;
-    width: 80%;
   }
   .course img{
     height: 170px;
     width:261px ;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width:400px) {
+  .course{
+    width: 300px;
+    height: 350px;
+    margin: 40px auto;
+    width: 80%;
+  }
+  .course img{
+    height: 150px;
+    width:230px ;
     border-radius: 20px;
   }
 }

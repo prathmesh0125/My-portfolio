@@ -45,23 +45,14 @@
   }
   .Profilecard:hover {
     transform: rotate(360deg);
-    /* transform: translateZ(20px) rotateX(-20deg) rotateY(50deg);  */
-    /* transform: scale(1.1); */
-    /* background-color: rgb(255, 0, 0); */
-    /* transform: skew(-10deg); */
-    /* transform: translate(4px,4px); */
-    /* transform: scaleY(1.5); */
-    /* transform: scalex(0.5); */
-    /* transform: scaleX(10); */
+ 
   }
   
   .Profilecard img {
     width: 249px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    /* border-radius: 15px; */
     height: 150px;
-    /* border-radius: 20px; */
   }
   .Profilecard h2 {
     margin: 10%;
@@ -75,10 +66,10 @@
     line-height: 25px;
   }
   .plate {
-    width: 70%;
+    width: 80%;
     height: 50px;
     /* border: 1px solid red; */
-    margin: 20px;
+    margin: 5% auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -90,14 +81,14 @@
   }
   
   .button {
-    width: 130%;
-    /* height: 30px; */
-    /* background-color: rgb(5, 5, 59); */
-    /* color: rgb(181, 37, 37); */
+    width: 100%;
+    
     line-height: 20px;
-    /* text-align: center; */
-    font-size: 16px;
-    margin-left: -20px;
+    
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 1px 2px 8px 2px rgb(71, 56, 56);
   }
@@ -108,11 +99,9 @@
   }
   .profileInfo a {
     color: black;
-    margin-top: 20%;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 46px;
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
   }
   @media (min-width: 420px) and (max-width: 1150px) {
     .ProfileContainer {
@@ -141,20 +130,45 @@
   }
   @media  (max-width: 420px) {
     .Profilecard {
-      width: 230px;
-      height: 260px;
+      width: 180px;
+      height: 220px;
     }
     .Profilecard img {
-      width: 229px;
+      width: 178px;
       border-top-right-radius: 15px;
       border-top-left-radius: 15px;
-      height: 134px;
+      height: 120px;
+  }
+  .ProfileContainer {
+   gap: 1rem;
   }
   h2{
     text-align: center;
     margin-top: 5%;
     margin-bottom: -10%;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
   }
+  .Profilecard{
+    margin: 0%;
+  }
+  .profileInfo {
+    margin-top: 38%;
+    line-height: 31px;
+}
+.Profilecard p {
+  margin: 0px auto;
+  text-align: center;
+  padding: 1px 14px;
+  /* line-height: 25px; */
+}
+.profileInfo a {
+ font-size: 13px;
+}
+.button {
+  width: 100%;
+  line-height: 8px;
+  font-size: 11px;
+  
+}
   }

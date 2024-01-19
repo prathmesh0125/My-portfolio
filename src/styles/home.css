@@ -292,7 +292,7 @@ h1 .Typewriter {
 
 @media screen and (max-width: 420px) {
   .hero {
-    top: 9%;
+    top: 10%;
     height: 85%;
     flex-direction: column;
   }
@@ -307,8 +307,8 @@ h1 .Typewriter {
     overflow: hidden;
   }
   .btn-Home {
-    width: 117px;
-    font-size: 15px;
+    width: 110px;
+    font-size: 14px;
   }
   .heroright {
     margin: 0 auto;
@@ -328,19 +328,20 @@ h1 .Typewriter {
     justify-content: center;
     line-height: 58px;
     justify-content: space-between;
-    font-size: 23px;
+    font-size: 1.2rem;
+
   }
   .heroleft .elem h1 {
     line-height: 0.9;
-    font-weight: 600;
-    font-size: 2rem;
+    font-weight: 700;
+    font-size: 1.6rem;
     text-align: center;
     color: black;
   }
   h1 .Typewriter {
     line-height: 1.33;
-    font-weight: 600;
-    font-size: 2rem !important;
+    font-weight: 700;
+    font-size: 1.6rem !important;
     color: black;
   }
 }
@@ -415,7 +416,6 @@ h1 .Typewriter{
   font-size: 2rem !important;
 }
 }
-
 
 
 @media (min-width: 900px) and (max-width: 1300px) {

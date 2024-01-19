@@ -17,7 +17,7 @@ export default function App() {
     {
       id: "c1",
       img: "tech/git.jpg",
-      certificate: "Git for",
+      certificate: "Git",
       institute: "Udemy",
     },
     {
@@ -43,11 +43,11 @@ export default function App() {
         spaceBetween: 30,
       },
       1000: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 30,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
       },
     };
@@ -57,8 +57,6 @@ export default function App() {
 
       <Swiper
         className="course_container"
-        slidesPerView={3}
-        spaceBetween={4}
         centeredSlides={true}
         autoplay={{
           delay: 3500,

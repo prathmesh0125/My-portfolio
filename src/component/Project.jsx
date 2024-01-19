@@ -7,7 +7,7 @@ const Project = () => {
   const projectWork = [
     {
       id: 1,
-      src: "project/Barebeat.png",
+      src: "Project/Barebeat.png",
       alt: "loading",
       name: "Music Palyer",
       description:"Designed a captivating UI in HTML and CSS, featuring album art and intuitive playback controls. Implemented real-time audio playback in React, ensuring seamless user experience with modular components for efficient state management.",
@@ -19,7 +19,7 @@ const Project = () => {
     },
     {
       id: 2,
-      src: "project/Top_Headline.png",
+      src: "Project/Top_Headline.png",
       alt: "loading",
       name: "Top-Headline",
       description:" developed a responsive news web application leveraging the capabilities of React.js and integrating real-time news updates through the News API, offering users a modern and interactive platform to stay informed.",
@@ -30,7 +30,7 @@ const Project = () => {
     },
     {
       id: 3,
-      src: "project/Text_analyzer.png",
+      src: "Project/Text_analyzer.png",
       alt: "loading",
       name: "Text-Analyzer",
       description:"I engineered a text analyzer application using React.js, enabling users to analyze and interpret textual content efficiently, providing valuable insights and enhancing user engagement with a dynamic and user-friendly interface",
@@ -43,7 +43,7 @@ const Project = () => {
     },
     {
       id: 4,
-      src: "project/weather.png",
+      src: "Project/weather.png",
       alt: "loading",
       name: "Weather app",
       description:"Enhanced visual appeal with custom CSS and Bootstrap in a user-friendly interface. Leveraged API-Ninjas for real-time weather updates, integrating JavaScript for seamless, responsive user interactions",
@@ -54,7 +54,7 @@ const Project = () => {
     },
     {
       id: 5,
-      src: "project/study.png",
+      src: "Project/study.png",
       alt: "loading",
       name: "Study Sync",
       description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
@@ -67,7 +67,7 @@ const Project = () => {
   
     {
       id: 6,
-      src: "project/Blog website.png",
+      src: "Project/Blog website.png",
       alt: "loading",
       name: "Blog Websie",
       description:"I crafted a dynamic blog website using the power of HTML and CSS, seamlessly blending aesthetic design with structured content for an engaging user experience",

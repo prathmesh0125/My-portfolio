@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import "../styles/myswapper.css";
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import {Autoplay, Pagination, Navigation } from 'swiper/modules';
 import{   BsGithub} from "react-icons/bs"; 
 import { Link } from 'react-router-dom';
 export default function App() {
@@ -95,12 +95,18 @@ export default function App() {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
+        centeredSlides={true}
+
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           // clickable: false,
         }}
         
         // navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay,Pagination, Navigation]}
         className="mySwiper"
       >
         <h1 className='swpaper_title'>Projects</h1>

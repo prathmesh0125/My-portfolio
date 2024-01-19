@@ -40,7 +40,7 @@
   padding: 2vmax;
   display: flex;
   transform: translateX(200vw) translateY(554%) rotateZ(-360deg);
-  animation: aboutAnimation 2s ease-in forwards;
+  animation: aboutAnimation 1.2s ease-in forwards;
 }
 
 @keyframes aboutAnimation {

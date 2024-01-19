@@ -18,12 +18,12 @@ const Testimonial = () => {
       Text:"Prathmesh's passion for learning and mastering frontend tech marks him a valuable asset.his  imppresive skills and dedication shine in exceptional frontend work  ",
       personname: "Sumit moni",
       post: "Full stack developer",
-      img:"tech/profile.png",
+      img:"tech/sumit sir.jpg",
       href:"https://www.linkedin.com/in/sumitsoni0226/"
     },
     {
       id: 1,
-      Text:"Prathmesh excels in frontend development, demonstrating dedication, passion, and adept problem-solving. His commitment to continuous improvement makes him a pleasure to mentor, highly recommended for any software development opportunity.",
+      Text:"Prathmesh is a frontend development standout, demonstrating dedication, passion, and adept problem-solving. His commitment to continuous improvement makes him a pleasure to mentor. ",
       personname: "Abhishek Saware",
       post: "SDE @EnergyExemplar",
       img:"tech/profile.png",

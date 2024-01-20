@@ -65,7 +65,7 @@ export default function App() {
       src: "Project/study.png",
       alt: "loading",
       name: "Study Sync",
-      description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores dolorum asperiores architecto animi dignissimos fuga saepe debitis deserunt. Quos natus dolores id dolorem ab nisi recusandae laborum illo, cum molestias?",
+      description:"Crafted a StudySync website with HTML and CSS, harmonizing content and style for an engaging educational platform, Seamless design meets functionality, providing an immersive study experience",
       techstack:" #css #html ",
       github:"https://github.com/prathmesh0125/Studysync",
       link:"https://studysynce.netlify.app/"
